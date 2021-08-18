@@ -1,0 +1,98 @@
+:root {
+    --navBar-style: rgba(29, 70, 38, 0.89);;
+    --footer-fontColor: rgb(157, 207, 161);
+    --footer-style:rgb(31, 126, 82);
+    --primeraSeccion-style: rgb(45, 77, 50);
+    --segundaSeccion-style: rgb(29, 82, 44);
+    --dropDownMenu-style: rgba(250, 242, 242, 0.924);
+    --ptH1-style: rgb(240, 240, 247);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(41, 87, 45);
+}
+
+/*/header*/
+
+header{
+    
+    top:0;
+    border-top: 30px solid rgb(52, 53, 51);
+    width:100%;
+}
+
+
+
+.primeraSeccion {
+
+    
+    background-color: var(--primeraSeccion-style);
+    display: block;
+}
+
+.segundaSeccion {
+
+    background-color: var(--segundaSeccion-style);
+    
+}
+
+.form__style{
+    background-color: var(--footer-style);
+    color: var(--footer-fontColor);
+}
+
+.footer__container{
+    padding-bottom: 2rem;
+}
+
+.form__title{
+    margin: 2rem 0 4rem 0;
+    
+}
+
+
+/* MODIFICO ALGUNAS COSAS DE BOOTSTRAP, PUEDE MEDIANTE LAS CLASES O AGREGANDO ID AL TAG HTML */
+
+
+
+.pt-h1 {
+    padding: 2rem 0 1rem 0;
+    color: var(--ptH1-style);
+    
+}
+
+.pt-6{
+    padding: 2rem 0 4rem 0 ;
+    
+
+}
+
+.pt-7 {
+    padding: 2rem 0 2rem 0 ;
+}
+
+li {
+    list-style: none;
+
+}
+
+@keyframes scaleCat {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.03);
+    }
+}
+
+.card:hover{
+    animation: scaleCat 1s forwards;
+}
+

@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+/* Estilos generales */
+
+* {
+    margin: 5px;
+    padding:0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-family: 'Comfortaa','Nanum Gothic', sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    
+    background-color: rgb(245, 245, 238);
+    color: rgb(20, 100, 26);
+ 
+}
+
+h1 
+h2 {
+    color: rgb(16, 121, 68);
+}
+
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: seagreen;
+}
+
+p{
+    padding: 0em 60px;
+    font-size: 2rem;
+}
+
+/* Footer */
+
+aside {
+    background-color: rgb(224, 240, 224);
+    
+}
+
+footer {
+    color: black;
+    background-color: gainsboro;
+
+}
+
+
+/* Menu */
+
+a {
+    color: rgb(30, 95, 30);
+    text-decoration: none;
+
+}
+
+ ul { list-style: none;
+margin: 10px;
+padding: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+/*                 flex                   */
+
+.nav-menu{
+    display: flex;
+    padding-left: 10px;
+    margin-right: 40px;
+    list-style: none;
+    
+    }
+    
+    .nav-menu-div{
+     font-size: 20px;
+    margin-right:10px ;
+    line-height: 10px;
+   
+    }
+
+    .nav{
+    display: flex;
+    justify-content: space-between;
+
+    }
+
+    /*                 flex              */
+
+   
+
+
+
+
+/*finaliza menu*/
+
+#navegacion {
+    color: hsl(30, 81%, 50%);
+    padding: 0;
+    
+
+}
+
+#contenido{
+    color: hsl(32, 93%, 44%);
+    width: 1000px;
+    padding-right: 50px;
+    padding-top: 250px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+}
+
+
+/* Seccion Productos */
+
+.grid-item{
+    display: flex;
+    align-content: center;
+    justify-content:center;
+
+    background-color: rgb(221, 170, 103);
+    
+    transition-duration: 0.3s;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.grid-item:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04) ;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-auto-rows:minmax( 300px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+    
+}
+
+
+
+
+
+
+
+/*seccion beneficios*/
+
+#beneficios{
+    padding: 50px;
+    margin: 50px;
+    border-bottom:solid rgb(211, 141, 11);
+    border-top:solid rgb(196, 102, 13);
+    border-left:solid #b3790f;
+    border-right:solid rgb(182, 111, 5);
+
+}
+.span{
+    background-color: aliceblue;
+
+}
+
+.parrafo{
+    padding-top: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px; 
+    word-spacing: 15px;
+    line-height:30px;
+    text-align: center;
+}
+
+
+.sobre_nosotros{
+    padding-top: 10px;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 60px;
+    margin: 10px;}
+
+
+
+
+
+
+/*g r a d i e n t e s*/
+
+.linear{
+    background: #093028; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #093028, #237a57); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #093028, #237a57); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 0;
+  padding: 10px;
+}
+
+/*g r a d i e n t e s*/
+
+
+
+/*               a n i m a s i o n                 */
+
+
+
+.fondo1{
+    width: 100%;
+    margin:center;
+   overflow: hidden;
+}
+
+.fondo1 ul { display: flex; 
+padding: 0%;
+width: 200%;
+
+animation: cambio 20s infinite;
+
+animation-timing-function: ease-in;
+}
+
+.fondo1 li {
+    width: 100%;
+    list-style: none;
+}
+
+   .fondo1 img {
+        width: 100%;
+    
+        
+   } 
+
+
+   @keyframes cambio{
+       0% {margin-left: 0;}
+       20%{margin-left: 0;}
+
+       30%{ margin-left: -100%;}
+       50%{ margin-left: -100%;}
+
+   }
+
+/*               a n i m a s i o n                 */
+
+
+
+
+
+
+
+/*               boton flotante               */
+
+   .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/*               boton  flotante          */
+
+
